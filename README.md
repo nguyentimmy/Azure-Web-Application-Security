@@ -1,4 +1,4 @@
-### Part 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
+# Part 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
 
 Today you will build, host, and design your own web application. Specifically, you will:
 
