@@ -1,48 +1,4 @@
-### Unit Description
-
-Build, secure, and protect a cloud application that hosts their own cyber blog. This project will result in tangible deliverables that demonstrate their knowledge of cloud, cloud security, networking, web development, cryptography, and network security.
-
-
-### Unit Objectives
-
-<details>
-    <summary>Click here to view the daily unit objectives and previous domains covered.</summary>
-
-  <br>
-
-- **Day 1:** **Build, host, and design** their own web application.
-  - This day will incorporate topics from the Networking, Cloud, and Web Development units.
-- **Day 2:** **Secure** their web application with SSL certificates.
-  - This day will incorporate topics from the Cryptography and Terminal units.
-- **Day 3:** **Protect** their web application with Azure's security features.
-  - This day will incorporate topics from the Network Security unit.
-  
-#### Day 1
-
-
-- [Microsoft Docs: How to open a support ticket](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
-- [Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
-- [How to come up with a Good Domain Name](https://domains.google/learn/how-to-come-up-with-a-good-domain-name/)
-- [Split-Half Search](https://www.peachpit.com/articles/article.aspx?p=420908&seqNum=3)
-- [Top CyberSecurity Blog Websites](https://onlinedegrees.sandiego.edu/top-cyber-security-blogs-websites/)
-
-#### Day 2:
-
-- [Azure Key Vaults](https://azure.microsoft.com/en-us/services/key-vault/#product-overview)
-- [What is a self signed certificate?](https://sectigostore.com/page/what-is-a-self-signed-certificate/)
-- [Binding Certificates in Azure](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-bindings#bind-your-ssl-certificate)
-- [Azure App Service Managed Certificates](https://azure.microsoft.com/en-us/updates/secure-your-custom-domains-at-no-cost-with-app-service-managed-certificates-preview/)
-- [Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
-- If Microsoft Support is needed, visit [How to open a support ticket](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
-
-
-#### Day 3
-
-- [Azure Front Door Documentation](https://azure.microsoft.com/en-us/services/frontdoor/#overview)
-- [Azure Web Application Firewall on Front Door](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview)
-- [Azure Security Center Documentation](https://docs.microsoft.com/en-us/azure/security-center/)
-
-# Day 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
+# Part 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
 
 Today you will build, host, and design your own web application. Specifically, you will:
 
@@ -59,7 +15,6 @@ Today you will build, host, and design your own web application. Specifically, y
 - If Microsoft Support is needed, visit [How to open a support ticket](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
 - [Split-Half Search](https://www.peachpit.com/articles/article.aspx?p=420908&seqNum=3)
 - [Top CyberSecurity Blog Websites](https://onlinedegrees.sandiego.edu/top-cyber-security-blogs-websites/)
-
 
 
 ---
@@ -321,12 +276,12 @@ After you have made your changes, return to your browser and refresh your webpag
 ### Part 5: Answer Review Questions
 
 
-- Open up the [review questions](https://docs.google.com/document/d/1VoWNPNUvobnVj7F6oM2wnVO0vViaZlzgIUs43adVw1U/copy), make a copy of the document, and answer the Day 1 review questions.   
+- Open up the [review questions](https://docs.google.com/document/d/1VoWNPNUvobnVj7F6oM2wnVO0vViaZlzgIUs43adVw1U/copy), make a copy of the document, and answer the Part 1 review questions.   
    - Note that you will submit this document as one of your deliverables at the end of the project.
 
 ---
 
-### Day 1 Milestone
+### Part 1 Milestone
 
 In today's class, you:
   - (1) - **Created an Azure web app**.
@@ -340,7 +295,7 @@ Completing these steps required you to leverage your terminal, systems administr
 
 ---
 
-# Day 2 Activity File: Secure Your Web Application with SSL Certificates (Azure Premium and GoDaddy Domain Version)
+# Part 2 Activity File: Secure Your Web Application with SSL Certificates (Azure Premium and GoDaddy Domain Version)
 
 Today, you will secure your web application. Specifically, you will:
 
@@ -367,7 +322,7 @@ Today, you will secure your web application. Specifically, you will:
 
 ### Getting Started/Prerequisites
 
-Before you begin Day 2, you are required to have completed the following tasks from Day 1:
+Before you begin Part 2, you are required to have completed the following tasks from Part 1:
 
 - Created your own web application.
 - Created your own unique domain name.
@@ -394,9 +349,9 @@ In this first part, you will create an Azure key vault. To do so, complete the f
       ![A screenshot highlights the "+ Create" button.](../Images/project1_day2_2.png)
  
 4. On the "Create key vault" tab, make the following selections:
-   - Subscription/Resource Group: Select the same subscription and resource groups that you selected on Day 1.
+   - Subscription/Resource Group: Select the same subscription and resource groups that you selected on Part 1.
    - Key Vault Name: Choose a key vault name, such as `project1_KeyVault`. (Note: This name must be globally unique, so you will be prompted to choose a different name if the one you enter has been used before.)
-   - Region: Select the same region that you selected on Day 1.
+   - Region: Select the same region that you selected on Part 1.
    - Pricing tier: Select the "Standard" tier.
    - Leave the default options for all of the other tabs (Access Policy, Networking, Tags).
   
@@ -422,7 +377,7 @@ In this first part, you will create an Azure key vault. To do so, complete the f
 
 In this second part, you will return to the command line to create a self-signed certificate using OpenSSL. To do so, complete the following steps:
 
-1.  From your Azure portal, access the same Cloud Shell that you accessed on Day 1 to load the Docker container, as the following image shows:
+1.  From your Azure portal, access the same Cloud Shell that you accessed on Part 1 to load the Docker container, as the following image shows:
 
      ![A screenshot highlights the Cloud Shell icon.](../Images/project1_12.png)
 
@@ -532,7 +487,7 @@ In this part, you will use Azure to import and bind the certificate that you jus
  
  
 5. Now that you have uploaded your certificate, it's time to add it to your web application. To do so, complete the following steps:
-     - Return to the web application (under "App Services") that you created on Day 1.
+     - Return to the web application (under "App Services") that you created on Part 1.
      - On this page, select "TLS/SSL Settings," as the following image shows:
 
       ![A screenshot highlights the "TLS/SSL Settings" option.](../Images/project1_day2_14.png)
@@ -628,12 +583,12 @@ Congratulations, you have now created a web application and secured it with a tr
 
 ### Part 5: Answer Review Questions
 
-- Open your copy of the [review questions](https://docs.google.com/document/d/1VoWNPNUvobnVj7F6oM2wnVO0vViaZlzgIUs43adVw1U/edit?usp=sharing), make a copy of the document, and answer the Day 2 review questions.   
+- Open your copy of the [review questions](https://docs.google.com/document/d/1VoWNPNUvobnVj7F6oM2wnVO0vViaZlzgIUs43adVw1U/edit?usp=sharing), make a copy of the document, and answer the Part 2 review questions.   
      - Note that you will submit this document as one of your deliverables at the end of the project.
 
 ---
 
-### Day 2 Milestone
+### Part 2 Milestone
 
 In today's class, you:
   - (1) **Created a key vault**. 
@@ -647,7 +602,7 @@ Completing these steps required you to leverage your terminal, systems administr
 
 ---
 
-# Day 3 Activity File: Protect Your Web Application with Azure's Security Features
+# Part 3 Activity File: Protect Your Web Application with Azure's Security Features
 
 Today, you will be protecting your web application. Specifically, you will be working on:
 
@@ -672,7 +627,7 @@ Today, you will be protecting your web application. Specifically, you will be wo
 
 ### Getting Started / Pre-requisites
 
-Before you begin Day 3, you are required to have completed the following tasks from Day 2:
+Before you begin Part 3, you are required to have completed the following tasks from Part 2:
 
 - Created a key vault.
 - Created a self-signed certificate.
@@ -690,7 +645,7 @@ In this first part, you will create an Azure Front Door instance. To do so, comp
 
 	 - Make sure that you're logged in to your personal Azure account (not @Cyberxsecurity), where your Cloud Security&ndash;unit VMs are located.
 	
-2. Next, access the app service resource that you created on Day 1.
+2. Next, access the app service resource that you created on Part 1.
 
 3. From the menu on the left side of the screen, select "Networking."
 
