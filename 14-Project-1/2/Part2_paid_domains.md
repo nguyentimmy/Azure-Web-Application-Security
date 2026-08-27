@@ -45,11 +45,11 @@ In this first part, you will create an Azure key vault. To do so, complete the f
 	
 2. Select "Key vaults" from the Azure search field at the top of the page, as the following image shows:
 
-      ![A screenshot depicts the "Services" menu with "Key vaults" highlighted.](../Images/project1_day2_1.png)
+      ![A screenshot depicts the "Services" menu with "Key vaults" highlighted.](/Images/project1_day2_1.png)
  
 3. Select "+ Create" from the Key Vault page to create your key vault, as the following image shows:
 
-      ![A screenshot highlights the "+ Create" button.](../Images/project1_day2_2.png)
+      ![A screenshot highlights the "+ Create" button.](/Images/project1_day2_2.png)
  
 4. On the "Create key vault" tab, make the following selections:
    - Subscription/Resource Group: Select the same subscription and resource groups that you selected on Day 1.
