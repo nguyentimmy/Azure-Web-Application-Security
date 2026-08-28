@@ -39,11 +39,11 @@ In Part 1 of this activity, you will create your own Azure web application. You 
 	
 2. Select "App Services" from the Azure search field at the top of the page, as the following image shows:
 
-      ![A screenshot depicts the "Services" menu with "App Services" highlighted.](../Images/project1_1.png)
+      ![A screenshot depicts the "Services" menu with "App Services" highlighted.](Step-by-Step-Guide/Part 1/Images/project1_1.png)
 
 3. Select "+ Create" to create your application, as the following image shows:
 
-     ![A screenshot depicts "App Services" page with "+ Create" highlighted.](../Images/project1_2.png)
+     ![A screenshot depicts "App Services" page with "+ Create" highlighted.](Step-by-Step-Guide/Part 1/Images/project1_2.png)
 
 4. Under the "Basics" tab, make the following selections:
    - Subscription/Resource Group: Select the same subscription nd resource group that you used during Cloud week.
@@ -56,7 +56,7 @@ In Part 1 of this activity, you will create your own Azure web application. You 
 
     The following image shows the completed "Basics" tab:
 
-    ![A screenshot depicts the appropriate selections.](../Images/project1_3.png)
+    ![A screenshot depicts the appropriate selections.](Step-by-Step-Guide/Part 1/Images/project1_3.png)
 
 5. For the App Service Plan, complete the following steps:  
    - Under "Linux Plan," select "Create New" and then enter "project1plan."  
@@ -65,7 +65,7 @@ In Part 1 of this activity, you will create your own Azure web application. You 
      - Note that this allows you to choose the pricing structure of your web app.
      - Select "Dev/Test" and "Plan B1" (the green option), and then click "Apply," as the following image shows:
 
-      ![A screenshot depicts the appropriate pricing selections.](../Images/project1_4.png)
+      ![A screenshot depicts the appropriate pricing selections.](Step-by-Step-Guide/Part 1/Images/project1_4.png)
 
 
 6. Leave the default options for all of the other tabs. Select the "Review + Create" tab.
@@ -80,15 +80,15 @@ In this second part, you will select your own unique domain name using Azure. To
    
    - First, select your subscription, as the following image shows:
 
-    ![A screenshot depicts the Subscriptions page with the current subscription highlighted.](../Images/project1_A.png)
+    ![A screenshot depicts the Subscriptions page with the current subscription highlighted.](Step-by-Step-Guide/Part 1/Images/project1_A.png)
   
    - Give the page a few minutes to completely load. Then, click the option to upgrade your subscription at the top of the page, as the following image shows:
 
-    ![A screenshot depicts the subscription detail page with the option to upgrade highlighted.](../Images/project1_B.png)
+    ![A screenshot depicts the subscription detail page with the option to upgrade highlighted.](Step-by-Step-Guide/Part 1/Images/project1_B.png)
   
    - Make sure to select the "Basic" plan, then select "Upgrade," as the following image shows:
 
-  ![A screenshot depicts the upgrade choices with the "Basic" option and the "Upgrade" button highlighted.](../Images/project1_C.png)
+  ![A screenshot depicts the upgrade choices with the "Basic" option and the "Upgrade" button highlighted.](Step-by-Step-Guide/Part 1/Images/project1_C.png)
 
 2. Once your subscription has been updated, log out of Azure and then log right back in so your changes can take effect.
 
@@ -98,15 +98,15 @@ In this second part, you will select your own unique domain name using Azure. To
 
     - Select your app from this page, as the following image shows:
 
-     ![A screenshot depicts the list of apps.](../Images/project1_5.png)
+     ![A screenshot depicts the list of apps.](Step-by-Step-Guide/Part 1/Images/project1_5.png)
 
 4. After selecting your app, a menu of available options should appear on the left-hand side of your app. Select "Custom domains," as the following image shows:
 
-     ![A screenshot depicts the menu with "Custom domains" highlighted.](../Images/project1_6.png)
+     ![A screenshot depicts the menu with "Custom domains" highlighted.](Step-by-Step-Guide/Part 1/Images/project1_6.png)
 
 5. Once this new page opens, note that your unique IP has been created, as the following image shows:
 
-     ![A screenshot depicts the Custom Domains page with an IP address.](../Images/project1_7.png)
+     ![A screenshot depicts the Custom Domains page with an IP address.](Step-by-Step-Guide/Part 1/Images/project1_7.png)
 
 6.  Note that upon creation of this app, Azure provides you with a free domain.
     
@@ -116,7 +116,7 @@ In this second part, you will select your own unique domain name using Azure. To
      
      - Note: This may take up to 5 - 10 minutes after upgrading your account.
 
-      ![A screenshot highlights the "Buy App Service domain" option.](../Images/project1_8.png)
+      ![A screenshot highlights the "Buy App Service domain" option.](Step-by-Step-Guide/Part 1/Images/project1_8.png)
 
 8. On the "Create App Service domain" page, select the same resource group that you selected before.
    - Choose a unique domain for your security blog.
@@ -126,7 +126,7 @@ In this second part, you will select your own unique domain name using Azure. To
 
     The following image shows this step:
     
-    ![A screenshot depicts the "Create App Service domain" page.](../Images/project1_9.png)
+    ![A screenshot depicts the "Create App Service domain" page.](Step-by-Step-Guide/Part 1/Images/project1_9.png)
 
 9. Select the "Contact information" tab.
    - Enter the information and address as requested.
@@ -140,7 +140,7 @@ In this second part, you will select your own unique domain name using Azure. To
 
 12. Once you've successfully created your domain, your new domain(s) should appear on the Custom Domains page, as the following image shows:
 
-     ![A screenshot highlights the new domain name on the Custom Domains page.](../Images/project1_10.png)
+     ![A screenshot highlights the new domain name on the Custom Domains page.](Step-by-Step-Guide/Part 1/Images/project1_10.png)
 
      - If the domain doesn't appear, refresh your page.
      - *Note: If needed, you have five days to cancel your domain to receive a full refund*.
@@ -163,7 +163,7 @@ In Part 3, you will use the Azure Cloud Shell to deploy a Docker container on yo
 
 2.  Note that the Docker container image name is `cyberxsecurity/project1-apachewebserver`, as the following image shows:
 
-     ![A screenshot depicts the Docker container image name.](../Images/project1_11.png)
+     ![A screenshot depicts the Docker container image name.](Step-by-Step-Guide/Part 1/Images/project1_11.png)
 
 3. Next, you will use the Azure Cloud Shell to deploy this container to your web application.
    - Azure Cloud Shell takes user input from a command line to manage Azure's cloud resources.
@@ -173,7 +173,7 @@ In Part 3, you will use the Azure Cloud Shell to deploy a Docker container on yo
         - [Azure Web App Container commands](https://docs.microsoft.com/en-us/cli/azure/webapp/config/container?view=azure-cli-latest)
    - To open Azure Cloud Shell, click the shell logo in the tool bar at the top of the screen, as indicated by the red arrow in the following image: 
   
-    ![A screenshot depicts the shell logo highlighted with a red arrow.](../Images/project1_12.png)
+    ![A screenshot depicts the shell logo highlighted with a red arrow.](Step-by-Step-Guide/Part 1/Images/project1_12.png)
  
    - Once you've clicked this icon, the Cloud Shell will be accessible at the bottom of your page.
 
@@ -191,7 +191,7 @@ In Part 3, you will use the Azure Cloud Shell to deploy a Docker container on yo
       - For example: `az webapp config container set --name bobswebapp --resource-group redteamRG --docker-custom-image-name cyberxsecurity/project1-apachewebserver`
    - After pressing enter, an output similar to the image below should appear:
     
-     ![A screenshot depicts the command output confirming that the docker container has successfully uploaded into the application.](../Images/project1_13.png)
+     ![A screenshot depicts the command output confirming that the docker container has successfully uploaded into the application.](Step-by-Step-Guide/Part 1/Images/project1_13.png)
 
 5. To verify that the container has been added correctly, run the following command to **show** the container for your web app: `az webapp config container show --name <name of webapp> --resource-group <name of your resource group>`
    - For example: `az webapp config container show --name bobswebapp --resource-group redteamRG`	
@@ -199,7 +199,7 @@ In Part 3, you will use the Azure Cloud Shell to deploy a Docker container on yo
 6. Now, check the unique domain that you selected to verify that the container has been successfully deployed. 
    - A cyber blog webpage that looks like the following image should appear (note that it may take five to eight minutes to load):
 
-   ![A screenshot depicts the homepage of a cyber blog.](../Images/project1_13b.png)
+   ![A screenshot depicts the homepage of a cyber blog.](Step-by-Step-Guide/Part 1/Images/project1_13b.png)
 
 Now, you are ready to customize your web application!
 	
@@ -221,12 +221,12 @@ You will now customize the following elements of the webpage:
    - To access these pages, you need to SSH over to your container and access the HTML files.
    - Return to your web app in Azure, select "SSH" from the left-hand toolbar, and then select "GO," as shown in the following image:
 
-    ![A screenshot of the Azure web app highlights the appropriate selections.](../Images/project1_14.png)
+    ![A screenshot of the Azure web app highlights the appropriate selections.](Step-by-Step-Guide/Part 1/Images/project1_14.png)
  
 2. This will SSH you right into the container.
    - Once you have access, change directories to the location where the HTML files are located by running `cd /var/www/html`, as the following image shows:
 
-   ![A screenshot depicts the command.](../Images/project1_15.png)
+   ![A screenshot depicts the command.](Step-by-Step-Guide/Part 1/Images/project1_15.png)
 
     
 3.  This directory contains the `index.html` file that makes up your webpage. To customize your webpage, complete the following steps:
@@ -342,11 +342,11 @@ In this first part, you will create an Azure key vault. To do so, complete the f
 	
 2. Select "Key vaults" from the Azure search field at the top of the page, as the following image shows:
 
-      ![A screenshot depicts the "Services" menu with "Key vaults" highlighted.](../Images/project1_day2_1.png)
+      ![A screenshot depicts the "Services" menu with "Key vaults" highlighted.](Step-by-Step-Guide/Part 2/Images/project1_day2_1.png)
  
 3. Select "+ Create" from the Key Vault page to create your key vault, as the following image shows:
 
-      ![A screenshot highlights the "+ Create" button.](../Images/project1_day2_2.png)
+      ![A screenshot highlights the "+ Create" button.](Step-by-Step-Guide/Part 2/Images/project1_day2_2.png)
  
 4. On the "Create key vault" tab, make the following selections:
    - Subscription/Resource Group: Select the same subscription and resource groups that you selected on Part 1.
@@ -357,7 +357,7 @@ In this first part, you will create an Azure key vault. To do so, complete the f
   
    The following image shows the completed "Create key vault" tab:
 
-   ![project1_1_day2_3](../Images/project1_day2_3.png)
+   ![project1_1_day2_3](Step-by-Step-Guide/Part 2/Images/project1_day2_3.png)
   
    - Finally, select "Review + Create" to create your key vault.
 
@@ -370,7 +370,7 @@ In this first part, you will create an Azure key vault. To do so, complete the f
 
    The following image shows these options:
 
-    ![A screenshot highlights the "Keys," "Secrets," and "Certificates" options.](../Images/project1_day2_4.png)
+    ![A screenshot highlights the "Keys," "Secrets," and "Certificates" options.](Step-by-Step-Guide/Part 2/Images/project1_day2_4.png)
 
 
 ### Part 2: Create a Self-Signed Certificate
@@ -379,7 +379,7 @@ In this second part, you will return to the command line to create a self-signed
 
 1.  From your Azure portal, access the same Cloud Shell that you accessed on Part 1 to load the Docker container, as the following image shows:
 
-     ![A screenshot highlights the Cloud Shell icon.](../Images/project1_12.png)
+     ![A screenshot highlights the Cloud Shell icon.](Step-by-Step-Guide/Part 1/Images/project1_12.png)
 
      - From this command line, you will now use the open source cryptography and SSL/TLS "toolkit" **OpenSSL** (it is preinstalled).
          - Recall that during Cryptography week, we used OpenSSL to generate keys and an IV to encrypt a message.
@@ -393,7 +393,7 @@ In this second part, you will return to the command line to create a self-signed
      - For example: `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout project1_key.key -out project1_cert.crt -addext "extendedKeyUsage=serverAuth"`
      - The following image shows this step:
       
-        ![A screenshot depicts the command line with the command entered.](../Images/project1_day2_5.png) 
+        ![A screenshot depicts the command line with the command entered.](Step-by-Step-Guide/Part 2/Images/project1_day2_5.png) 
  
      - We added the following options: 
          -  **-x509**: Indicates for OpenSSL to create an SSL certificate.
@@ -419,11 +419,11 @@ In this second part, you will return to the command line to create a self-signed
 
       The following image shows this step:
 
-      ![A screenshot depicts the command line with the questions filled out.](../Images/project1_day2_6.png) 
+      ![A screenshot depicts the command line with the questions filled out.](Step-by-Step-Guide/Part 2/Images/project1_day2_6.png) 
 
 5. Now, view your newly created key (`.key`) and certificate (`.crt`) by running `ls`, as the following image shows:
 
-      ![A screenshot depicts the `ls` command and its output.](../Images/project1_day2_7.png) 
+      ![A screenshot depicts the `ls` command and its output.](Step-by-Step-Guide/Part 2/Images/project1_day2_7.png) 
 
       -  Note that Azure requires a PFX format for its certificates.
           - The PFX format is the server certificate and the private key combined into a single encrypted file. 
@@ -441,11 +441,11 @@ In this second part, you will return to the command line to create a self-signed
      - Don't forget your password, as you will be prompted for it again shortly!
      - The following image shows this step:
 
-      ![A screenshot depicts the "Enter Export Password" prompt.](../Images/project1_day2_8.png) 
+      ![A screenshot depicts the "Enter Export Password" prompt.](Step-by-Step-Guide/Part 2/Images/project1_day2_8.png) 
 
 8.  View your new PFX certificate by running `ls`, as the following image shows:
 
-      ![A screenshot depicts the `ls` command and its output.](../Images/project1_day2_9.png) 
+      ![A screenshot depicts the `ls` command and its output.](Step-by-Step-Guide/Part 2/Images/project1_day2_9.png) 
  
 9.  To download your new PFX certificate, complete the following four steps:
      - (1) Click the "Upload/Download" icon in the toolbar above your Cloud Shell window.
@@ -455,7 +455,7 @@ In this second part, you will return to the command line to create a self-signed
      
      The following image shows these steps:
 
-      ![A screenshot highlights each step in the process.](../Images/project1_day2_10.png) 
+      ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part 2/Images/project1_day2_10.png) 
 
 
 ### Part 3: Import and Bind Your Self-Signed Certificate to Your Web App
@@ -467,7 +467,7 @@ In this part, you will use Azure to import and bind the certificate that you jus
 
 2. From your key vault, select "Certificates" and then "+ Generate/Import," as the following image shows:
 
-     ![A screenshot highlights the "Certificates" and "+ Generate/Import" options.](../Images/project1_day2_11.png)
+     ![A screenshot highlights the "Certificates" and "+ Generate/Import" options.](Step-by-Step-Guide/Part 2/Images/project1_day2_11.png)
  
 3. On the "Create a certificate" page, select the following:
       - **Method of Certificate Creation**: Import
@@ -477,20 +477,20 @@ In this part, you will use Azure to import and bind the certificate that you jus
 
       The following image shows these steps:
 
-      ![A screenshot depicts the filled out "Create a certificate" page.](../Images/project1_day2_12.png)
+      ![A screenshot depicts the filled out "Create a certificate" page.](Step-by-Step-Guide/Part 2/Images/project1_day2_12.png)
 
 
 4. Select "Create" to upload your certificate.
      - The following success message should appear to confirm that your PFX certificate has been uploaded to your key vault:
 
-     ![A screenshot depicts the success message.](../Images/project1_day2_13.png)
+     ![A screenshot depicts the success message.](Step-by-Step-Guide/Part 2/Images/project1_day2_13.png)
  
  
 5. Now that you have uploaded your certificate, it's time to add it to your web application. To do so, complete the following steps:
      - Return to the web application (under "App Services") that you created on Part 1.
      - On this page, select "TLS/SSL Settings," as the following image shows:
 
-      ![A screenshot highlights the "TLS/SSL Settings" option.](../Images/project1_day2_14.png)
+      ![A screenshot highlights the "TLS/SSL Settings" option.](Step-by-Step-Guide/Part 2/Images/project1_day2_14.png)
  
 6. On this page, import your new PFX certificate from your key vault. To do so, complete the following steps:
       - (1) Select "Private Key Certificates."
@@ -499,11 +499,11 @@ In this part, you will use Azure to import and bind the certificate that you jus
 
       The following image shows these steps:
 
-      ![A screenshot highlights each step in the process.](../Images/project1_day2_15.png)
+      ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part 2/Images/project1_day2_15.png)
 
 7. Your certificate should now appear as an available certificate to use for your web application, as the following image shows:
 
-      ![A screenshot depicts the available certificate.](../Images/project1_day2_16.png)
+      ![A screenshot depicts the available certificate.](Step-by-Step-Guide/Part 2/Images/project1_day2_16.png)
  
 8. Currently your certificate is just available to use for your web application&mdash;now, it is time to bind it! To bind your certificate, complete the following steps:
      - Select "Bindings."
@@ -514,29 +514,29 @@ In this part, you will use Azure to import and bind the certificate that you jus
 
      The following image shows these steps:
 
-     ![A screenshot highlights each step in the process.](../Images/project1_day2_17.png)
+     ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part 2/Images/project1_day2_17.png)
  
 9. After selecting "Add Binding," your binding should appear in the "TLS/SSL bindings" list, as the following image shows:
 
-     ![A screenshot depicts the binding in the "TLS/SSL bindings" list.](../Images/project1_day2_18.png)
+     ![A screenshot depicts the binding in the "TLS/SSL bindings" list.](Step-by-Step-Guide/Part 2/Images/project1_day2_18.png)
 
 10. Now, open a browser and access your web application.
      - Did your browser return an error like the one shown in the following image?
 
-     ![A screenshot depicts an error message.](../Images/project1_day2_20.png)
+     ![A screenshot depicts an error message.](Step-by-Step-Guide/Part 2/Images/project1_day2_20.png)
 
      - Note that this image is from the Chrome browser; the message may look slightly different depending on your browser.
 
 11. Let's examine the certificate that you just added. Click "Not secure" in the search bar if you are in Chrome, or a similar message depending on your browser, as shown in the following image:
 
-    ![A screenshot highlights the "Not secure" message in the search bar.](../Images/project1_day2_21.png)
+    ![A screenshot highlights the "Not secure" message in the search bar.](Step-by-Step-Guide/Part 2/Images/project1_day2_21.png)
 
      - After selecting "Not secure," select "Certificate (Invalid)" from the menu to examine your certificate.
      - Note the reason for your error based on the message on your certificate. This message is due to the fact that your certificate was created by you and not a trusted CA.
 
 12. Next, click the "Details" tab of your certificate, then select the "Subject" option, as the following image shows:
 
-     ![A screenshot highlights the "Details" tab and "Subject" option.](../Images/project1_day2_22.png)
+     ![A screenshot highlights the "Details" tab and "Subject" option.](Step-by-Step-Guide/Part 2/Images/project1_day2_22.png)
 
      - Note the results that now display in the box on the bottom; these were the options that you selected when you created your certificate with OpenSSL.
 
@@ -566,14 +566,14 @@ You will now create and bind a more secure, trusted SSL certificate to your web 
 3.  Select "+ Create App Service Managed Certificates."
 4.  When the pop-up appears on the right side of your screen, select your domain and click "Create," as the following image shows:
 
-      ![A screenshot highlights each step in the process.](../Images/project1_day2_23.png)
+      ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part 2/Images/project1_day2_23.png)
 
 5. Once your app service managed certificate has been created, return to the "Bindings" tab.
 6. Select "+ Add TLS/SSL Binding."
 7. When the pane appears on the right side of your screen, select your domain and the new certificate that you just created.
      - Note the current thumbprint next to your domain under the "TLS/SSL bindings" menu, and select the certificate with the other thumbprint, as the following image shows: 
 
-      ![A screenshot depicts the ](../Images/project1_day2_24.png)
+      ![A screenshot depicts the ](Step-by-Step-Guide/Part 2/Images/project1_day2_24.png)
 
 8. Select "SNI/SSL" for the TLS/SSL type, then click "Add Binding."
 
@@ -651,7 +651,7 @@ In this first part, you will create an Azure Front Door instance. To do so, comp
 
 4. From this page, select "Azure Front Door" under "More networking features," as the following image shows:
 
-     ![A screenshot highlights the "Azure Front Door" option.](../Images/project1_day3_1.png)
+     ![A screenshot highlights the "Azure Front Door" option.](Step-by-Step-Guide/Part 3/Images/project1_day3_1.png)
  
 5. On the next page, since you haven't created your Front Door resource yet, select "Create new" under "Front Door instance."
 
@@ -660,18 +660,18 @@ In this first part, you will create an Azure Front Door instance. To do so, comp
    - Leave the default settings to create a default **web application firewall (WAF)**.
    - Click the "Add" button at the bottom of the pane, as the following image shows:
 
-     ![A screenshot highlights the steps in this process.](../Images/project1_day3_2.png)
+     ![A screenshot highlights the steps in this process.](Step-by-Step-Guide/Part 3/Images/project1_day3_2.png)
  
 7. This will return you to the Azure Front Door page.
      - Click "OK" to update the Front Door instance to your application, as the following image shows:
 
-     ![A screenshot highlights the "OK" button.](../Images/project1_day3_3.png)
+     ![A screenshot highlights the "OK" button.](Step-by-Step-Guide/Part 3/Images/project1_day3_3.png)
 
 8. To verify that your Front Door instance has been set up correctly, select "Azure Front Door" (from Step 4) again.
 
 9. The message "Azure Front Door is configured for your web app" should display as confirmation, as shown in the following image:
  
-     ![A screenshot depicts the message.](../Images/project1_day3_4.png)
+     ![A screenshot depicts the message.](Step-by-Step-Guide/Part 3/Images/project1_day3_4.png)
 
 10.  Take a screenshot of this confirmation.
 
@@ -686,17 +686,17 @@ In this second part, you will view the features that are provided by your web ap
 
 3. Select your WAF, as the following image shows:
 
-     ![A screenshot highlights the project WAF.](../Images/project1_day3_5.png)
+     ![A screenshot highlights the project WAF.](Step-by-Step-Guide/Part 3/Images/project1_day3_5.png)
  
 4. When your WAF policies page opens, notice the options on the left side of your screen.
 
 5. Select "Managed rules" either from the left-hand toolbar or from the box on the bottom of the page, as the following image shows:
 
-     ![A screenshot highlights the two "Managed rules" options.](../Images/project1_day3_6.png)
+     ![A screenshot highlights the two "Managed rules" options.](Step-by-Step-Guide/Part 3/Images/project1_day3_6.png)
 
 6. When the "Managed rules" page appears, scroll through the page to view the various rules, as shown in the following image:
 
-     ![A screenshot depicts the "Managed rules" page.](../Images/project1_day3_7.png)
+     ![A screenshot depicts the "Managed rules" page.](Step-by-Step-Guide/Part 3/Images/project1_day3_7.png)
 
      - Note the following about these rules:
         - This is the list of the application vulnerabilities that the WAF will protect against (we will explore these vulnerabilities in further detail in the Web Vulnerabilities unit).
@@ -718,7 +718,7 @@ Now, you'll learn how to create a custom rule on your web application to protect
 
 1. Select "Custom rules" from the toolbar on the left-hand side of the screen, as the following image shows:
 
-     ![A screenshot highlights the "Custom rules" option.](../Images/project1_day3_8.png)
+     ![A screenshot highlights the "Custom rules" option.](Step-by-Step-Guide/Part 3/Images/project1_day3_8.png)
  
 
 2. To create a custom rule, select "+ Add custom rule."
@@ -733,11 +733,11 @@ Now, you'll learn how to create a custom rule on your web application to protect
      - Then, click "Add." 
      - The following image shows these steps:
 
-     ![A screenshot highlights each step in the process.](../Images/project1_day3_9.png)
+     ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part 3/Images/project1_day3_9.png)
 
 3. Your custom rule should now display on the page, as the following image shows:
 
-     ![A screenshot depicts the custom rule.](../Images/project1_day3_10.png)
+     ![A screenshot depicts the custom rule.](Step-by-Step-Guide/Part 3/Images/project1_day3_10.png)
 
 4. Take a screenshot of your custom rule. Press "Save".
 
@@ -764,7 +764,7 @@ In this part, you will learn how to use Azure Security Center to analyze and fix
 
 1.  To access Azure Security Center, from your web app, select "Security" from the toolbar, as the following image shows:
 
-     ![A screenshot highlights "Security" in the toolbar.](../Images/project1_day3_11.png)
+     ![A screenshot highlights "Security" in the toolbar.](Step-by-Step-Guide/Part 3/Images/project1_day3_11.png)
 
 2. When the Security Center page opens, it should display counts for both recommendations and alerts (note that your counts may vary).
      - Review the recommendations, and note that Azure describes the recommendations in this way: "Security Center continuously monitors the configuration of your app services to identify potential security vulnerabilities and recommends actions to mitigate them."
@@ -772,12 +772,10 @@ In this part, you will learn how to use Azure Security Center to analyze and fix
 
 3. Select the recommendation "FTPS should be required in your web App," as shown in the following image:      
 
-     ![A screenshot highlights the recommendation.](../Images/project1_day3_12.png)
+     ![A screenshot highlights the recommendation.](Step-by-Step-Guide/Part 3/Images/project1_day3_12.png)
 
 4.  When this page opens, expand the remediation steps, as shown in the following screenshot:
 
-     ![A screenshot highlights the remediation steps.](../Images/project1_day3_13.png)
+     ![A screenshot highlights the remediation steps.](Step-by-Step-Guide/Part 3/Images/project1_day3_13.png)
 
 5. Follow the recommended steps to remediate this recommendation.
-
-
