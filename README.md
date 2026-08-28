@@ -1,3 +1,34 @@
+# 🌐 Azure Web Application Security — Overview
+
+## Overview
+
+A three-part project that builds, hosts, and secures a custom web application on Microsoft Azure. **Part 1** creates an Azure App Service web app, buys a custom domain, and deploys a containerized cyber-blog from Docker Hub. **Part 2** secures it with SSL/TLS — a Key Vault, a self-signed certificate, and an App Service Managed Certificate, bound to the domain. **Part 3** hardens it with Azure Front Door and a Web Application Firewall (WAF), custom geo-filtering rules, and Security Center remediation.
+
+The project demonstrates the full lifecycle of standing up a public web app and layering security on top: encryption in transit, edge protection, traffic filtering, and posture management.
+
+---
+
+## Azure Resources & Security Measures
+
+| Resource / Feature | Function | Security Measure |
+| --- | --- | --- |
+| **App Service (Web App)** | Hosts the web application (PHP/Linux, B1 plan) | Managed platform; foundation for later SSL + WAF layers |
+| **App Service Domain** | Custom purchased domain for the app | Private registration option; replaces default URL |
+| **Docker Container** (`project1-apachewebserver`) | Deploys the cyber-blog framework to the app | Deployed via Cloud Shell; image pulled from Docker Hub |
+| **Key Vault** | Stores keys, secrets, and certificates | Centralized secret management; Standard tier |
+| **Self-Signed Certificate** (OpenSSL) | SSL cert created for the domain | Encrypts traffic; demonstrates untrusted-CA tradeoffs |
+| **App Service Managed Certificate** | Free trusted SSL cert bound to the domain | Trusted CA chain; auto-managed by Azure |
+| **Certificate Binding** | Attaches the certs to the web app | Enforces HTTPS/TLS for traffic in transit |
+| **Azure Front Door** | Global entry point / CDN for the app | Routes and accelerates traffic; hosts the WAF |
+| **Web Application Firewall (WAF)** | Filters malicious web traffic at the edge | Managed rule sets block common app attacks (OWASP-style) |
+| **Custom WAF Rule** | Geo-filtering rule | Denies all traffic except US, Canada, Australia |
+| **Azure Security Center** | Posture management + recommendations | Flagged and remediated "FTPS should be required" finding |
+
+---
+
+## Security Concepts Demonstrated
+
+SSL/TLS encryption in transit · trusted vs. self-signed certificates · centralized secret management (Key Vault) · edge protection with WAF · geo-based traffic filtering · continuous posture management.
 # Part 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
 
 Today you will build, host, and design your own web application. Specifically, you will:
