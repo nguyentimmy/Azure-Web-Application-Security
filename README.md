@@ -26,9 +26,6 @@ The project demonstrates the full lifecycle of standing up a public web app and 
 
 ---
 
-## Security Concepts Demonstrated
-
-SSL/TLS encryption in transit · trusted vs. self-signed certificates · centralized secret management (Key Vault) · edge protection with WAF · geo-based traffic filtering · continuous posture management.
 # Part 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
 
 Today you will build, host, and design your own web application. Specifically, you will:
