@@ -56,6 +56,7 @@ Before you begin, you are required to have completed the following tasks from th
 - Created a subscription.
 - Created a resource group.
 
+---
 
 ## Instructions
 
