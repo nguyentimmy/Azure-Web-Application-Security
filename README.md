@@ -1,6 +1,6 @@
 # 🌐 Azure Web Application Security — Overview
 
-## Overview
+## 🎯 Project Overview
 
 A three-part project that builds, hosts, and secures a custom web application on Microsoft Azure. **Part 1** creates an Azure App Service web app, buys a custom domain, and deploys a containerized cyber-blog from Docker Hub. **Part 2** secures it with SSL/TLS — a Key Vault, a self-signed certificate, and an App Service Managed Certificate, bound to the domain. **Part 3** hardens it with Azure Front Door and a Web Application Firewall (WAF), custom geo-filtering rules, and Security Center remediation.
 
@@ -8,7 +8,7 @@ The project demonstrates the full lifecycle of standing up a public web app and 
 
 ---
 
-## Azure Resources & Security Measures
+## 🧰 Azure Resources & Security Measures
 
 | Resource / Feature | Function | Security Measure |
 | --- | --- | --- |
@@ -22,11 +22,11 @@ The project demonstrates the full lifecycle of standing up a public web app and 
 | **Azure Front Door** | Global entry point / CDN for the app | Routes and accelerates traffic; hosts the WAF |
 | **Web Application Firewall (WAF)** | Filters malicious web traffic at the edge | Managed rule sets block common app attacks (OWASP-style) |
 | **Custom WAF Rule** | Geo-filtering rule | Denies all traffic except US, Canada, Australia |
-| **Azure Security Center** | Posture management + recommendations | Flagged and remediated "FTPS should be required" finding |
+| **Azure Security Center** | Posture management + recommendations | Flagged and remediated `"FTPS should be required"` finding |
 
 ---
 
-# Part 1 Activity File: Build, Host, and Design Your Web Application Using an Azure Premium Domain
+# 🌐 Part 1 — Build, Host, and Design Your Web Application
 
 Today you will build, host, and design your own web application. Specifically, you will:
 
@@ -36,7 +36,7 @@ Today you will build, host, and design your own web application. Specifically, y
   - (4) **Design your custom web application**.
   - (5) **Answer review questions**.
 
-### Resources
+## 📚 Resources
 
 - [Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
 - [How to come up with a good domain name](https://domains.google/learn/how-to-come-up-with-a-good-domain-name/)
@@ -47,7 +47,7 @@ Today you will build, host, and design your own web application. Specifically, y
 
 ---
 
-### Getting Started/Prerequisites
+## 🚀 Getting Started / Prerequisites
 
 Before you begin, you are required to have completed the following tasks from the Cloud unit:
 - Created a subscription.
@@ -55,9 +55,9 @@ Before you begin, you are required to have completed the following tasks from th
 
 ---
 
-## Instructions
+## 📋 Instructions
 
-### Part 1: Create an Azure Web App
+### 🌐 Step 1 — Create an Azure Web App
 
 In Part 1 of this activity, you will create your own Azure web application. You will name your application instance and select your back-end code and service plan. To do so, complete the following steps:
 
@@ -66,46 +66,46 @@ In Part 1 of this activity, you will create your own Azure web application. You 
 
 	 - Make sure that you're logged in to your personal Azure account, where your Cloud Security&ndash;unit VMs are located.
 	
-2. Select "App Services" from the Azure search field at the top of the page, as the following image shows:
+2. Select `"App Services"` from the Azure search field at the top of the page, as the following image shows:
 
       ![A screenshot depicts the "Services" menu with "App Services" highlighted.](Step-by-Step-Guide/Part%201/Images/project1_1.png)
 
-3. Select "+ Create" to create your application, as the following image shows:
+3. Select `"+ Create"` to create your application, as the following image shows:
 
      ![A screenshot depicts "App Services" page with "+ Create" highlighted.](Step-by-Step-Guide/Part%201/Images/project1_2.png)
 
-4. Under the "Basics" tab, make the following selections:
+4. Under the `"Basics"` tab, make the following selections:
    - Subscription/Resource Group: Select the same subscription nd resource group that you used during Cloud week.
    - Name: Name your instance as you see fit; note that this will be the name of the Azure app.
-      - For example: "Bobssecurityresume"
-   - Publish: Select "Code."
-   - Runtime Stack: Select "PHP 7.4."
-   - Operating System: Select "Linux."
+      - For example: `"Bobssecurityresume"`
+   - Publish: Select `"Code."`
+   - Runtime Stack: Select `"PHP 7.4."`
+   - Operating System: Select `"Linux."`
    - Region: Select the same region that you used during Cloud week.
 
-    The following image shows the completed "Basics" tab:
+    The following image shows the completed `"Basics"` tab:
 
     ![A screenshot depicts the appropriate selections.](Step-by-Step-Guide/Part%201/Images/project1_3.png)
 
 5. For the App Service Plan, complete the following steps:  
-   - Under "Linux Plan," select "Create New" and then enter "project1plan."  
-   - Under "Sku and size," select "Change size."
+   - Under `"Linux Plan,"` select `"Create New"` and then enter "project1plan."  
+   - Under `"Sku and size,"` select `"Change size."`
    - The spec picker will pop up on the right-hand side of your screen.
      - Note that this allows you to choose the pricing structure of your web app.
-     - Select "Dev/Test" and "Plan B1" (the green option), and then click "Apply," as the following image shows:
+     - Select `"Dev/Test"` and `"Plan B1"` (the green option), and then click `"Apply,"` as the following image shows:
 
       ![A screenshot depicts the appropriate pricing selections.](Step-by-Step-Guide/Part%201/Images/project1_4.png)
 
 
-6. Leave the default options for all of the other tabs. Select the "Review + Create" tab.
+6. Leave the default options for all of the other tabs. Select the `"Review + Create"` tab.
 
-7. Select "Create" at the bottom of the screen to create your web app.
+7. Select `"Create"` at the bottom of the screen to create your web app.
 
-### Part 2: Choose a Domain
+### 🏷️ Step 2 — Choose a Domain
 
 In this second part, you will select your own unique domain name using Azure. To do so, complete the following steps:
 
-1. Upgrade your subscription to "Basic" to give you the ability to purchase a domain.
+1. Upgrade your subscription to `"Basic"` to give you the ability to purchase a domain.
    
    - First, select your subscription, as the following image shows:
 
@@ -115,13 +115,13 @@ In this second part, you will select your own unique domain name using Azure. To
 
     ![A screenshot depicts the subscription detail page with the option to upgrade highlighted.](Step-by-Step-Guide/Part%201/Images/project1_B.png)
   
-   - Make sure to select the "Basic" plan, then select "Upgrade," as the following image shows:
+   - Make sure to select the `"Basic"` plan, then select `"Upgrade,"` as the following image shows:
 
   ![A screenshot depicts the upgrade choices with the "Basic" option and the "Upgrade" button highlighted.](Step-by-Step-Guide/Part%201/Images/project1_C.png)
 
 2. Once your subscription has been updated, log out of Azure and then log right back in so your changes can take effect.
 
-3. Locate the app that you just created by selecting "App Services" from the Azure search field at the top of the page.
+3. Locate the app that you just created by selecting `"App Services"` from the Azure search field at the top of the page.
     
     - Your new app should now appear on the list.
 
@@ -129,7 +129,7 @@ In this second part, you will select your own unique domain name using Azure. To
 
      ![A screenshot depicts the list of apps.](Step-by-Step-Guide/Part%201/Images/project1_5.png)
 
-4. After selecting your app, a menu of available options should appear on the left-hand side of your app. Select "Custom domains," as the following image shows:
+4. After selecting your app, a menu of available options should appear on the left-hand side of your app. Select `"Custom domains,"` as the following image shows:
 
      ![A screenshot depicts the menu with "Custom domains" highlighted.](Step-by-Step-Guide/Part%201/Images/project1_6.png)
 
@@ -141,13 +141,13 @@ In this second part, you will select your own unique domain name using Azure. To
     
     - It begins with the name that you selected and ends with ".azurewebsites.net".
 
-7.  To begin the process of choosing your own unique domain, select "Buy App Service domain," as the following image shows:
+7.  To begin the process of choosing your own unique domain, select `"Buy App Service domain,"` as the following image shows:
      
      - Note: This may take up to 5 - 10 minutes after upgrading your account.
 
       ![A screenshot highlights the "Buy App Service domain" option.](Step-by-Step-Guide/Part%201/Images/project1_8.png)
 
-8. On the "Create App Service domain" page, select the same resource group that you selected before.
+8. On the `"Create App Service domain"` page, select the same resource group that you selected before.
    - Choose a unique domain for your security blog.
       - It could be as simple as "your name + cyber blog," (e.g., **bobscyberblog.com**).
       - Note that if your chosen domain is unavailable, Azure will recommend similar names that are available.
@@ -157,15 +157,15 @@ In this second part, you will select your own unique domain name using Azure. To
     
     ![A screenshot depicts the "Create App Service domain" page.](Step-by-Step-Guide/Part%201/Images/project1_9.png)
 
-9. Select the "Contact information" tab.
+9. Select the `"Contact information"` tab.
    - Enter the information and address as requested.
       - Note that Azure provides an option to keep this information private.
 
 10. Leave the default options for all of the other tabs. 
-   - Note that under the "Hostname Assignment" tab, you can opt out of creating the "www" subdomain.
+   - Note that under the `"Hostname Assignment"` tab, you can opt out of creating the "www" subdomain.
 
-11. Select the "Review + Create" tab.
-    - Select "Create" to create your own unique domain.
+11. Select the `"Review + Create"` tab.
+    - Select `"Create"` to create your own unique domain.
 
 12. Once you've successfully created your domain, your new domain(s) should appear on the Custom Domains page, as the following image shows:
 
@@ -184,7 +184,7 @@ Congratulations! You now own your own domain, accessible on the internet!
 | :heavy_check_mark: A unique IP has been assigned to your web app. |
 | :heavy_check_mark: You have selected and created your own unique domain. |
 
-### Part 3: Deploy a Container on the Web App
+### 🐳 Step 3 — Deploy a Container on the Web App
 
 In Part 3, you will use the Azure Cloud Shell to deploy a Docker container on your web application. This container contains the framework for your cyber blog webpage.
 
@@ -207,8 +207,8 @@ In Part 3, you will use the Azure Cloud Shell to deploy a Docker container on yo
    - Once you've clicked this icon, the Cloud Shell will be accessible at the bottom of your page.
 
    - When using Shell, you may receive the following prompts:
-       -  Select which shell to use (Bash or Powershell): Select "Bash."
-       -  Create Storage: If a window appears, select "Create Storage."
+       -  Select which shell to use (Bash or Powershell): Select `"Bash."`
+       -  Create Storage: If a window appears, select `"Create Storage."`
 
 4. Next, from the command line, you'll enter a command to configure your container.
    - There are three types of commands that manage your web app container settings:
@@ -234,7 +234,7 @@ Now, you are ready to customize your web application!
 	
 
 
-### Part 4: Design Your Custom Web Application
+### 🎨 Step 4 — Design Your Custom Web Application
 
 The container that you just loaded onto your web application is a framework for a cyber-blog page that you can customize.
 
@@ -248,7 +248,7 @@ You will now customize the following elements of the webpage:
 
 1. To design and customize your webpage, you'll need to access the HTML pages of your new web application.
    - To access these pages, you need to SSH over to your container and access the HTML files.
-   - Return to your web app in Azure, select "SSH" from the left-hand toolbar, and then select "GO," as shown in the following image:
+   - Return to your web app in Azure, select `"SSH"` from the left-hand toolbar, and then select `"GO,"` as shown in the following image:
 
     ![A screenshot of the Azure web app highlights the appropriate selections.](Step-by-Step-Guide/Part%201/Images/project1_14.png)
  
@@ -261,14 +261,14 @@ You will now customize the following elements of the webpage:
 3.  This directory contains the `index.html` file that makes up your webpage. To customize your webpage, complete the following steps:
     - To change your name: 
       - Run: `nano index.html`
-      - Replace "ROBERT SMITH'S CYBER BLOG" with your name/text.
-      - Replace "Hi, I'm Robert!" with your name/text.
+      - Replace `"ROBERT SMITH'S CYBER BLOG"` with your name/text.
+      - Replace `"Hi, I'm Robert!"` with your name/text.
     - To change your email:
       - In the same `index.html` file, replace "aaggarwal@2u.com" with your email address.
     - To change your LinkedIn profile link:
       - In the same `index.html` file, replace "https://www.linkedin.com/" with the link to your LinkedIn profile.
     - To change your introduction:
-      - In the same `index.html` file, replace the paragraph beginning "This is a little introductory paragraph" with your own introduction.
+      - In the same `index.html` file, replace the paragraph beginning `"This is a little introductory paragraph"` with your own introduction.
     - To change your picture, follow these [instructions](https://docs.google.com/document/d/1BeNi1OvxhlxHPW_RflhDXBUPbv13fqJiWssVtM2WItc/edit).
        - Note that if you prefer not to use a photo of yourself, you can replace it with a stock photo. To do so, replace `<img src="https://drive.google.com/uc?export=view&id=1xvxRGAACLqLEMWaw6X_VatbirrIOtepy"` with this: `<img src="https://image.shutterstock.com/mosaic_250/549673/1198362232/stock-photo-hacking-and-malware-concept-hacker-using-abstract-laptop-with-binary-code-digital-interface-1198362232.jpg"`
 
@@ -290,19 +290,19 @@ You will now customize the following elements of the webpage:
 
 5.  Once you've written your blog posts, add your posts to your cyber blog webpage by completing the following steps:
     - Blog Topic 1
-       - Change "Blog Post 1 Title" to the title of your first blog post.
-       - Change "Add Keywords" to relevant keywords for your post (e.g., ransomware, cryptography).
-       - Change the section beginning "Add a short description here" to the text of your blog post.
+       - Change `"Blog Post 1 Title"` to the title of your first blog post.
+       - Change `"Add Keywords"` to relevant keywords for your post (e.g., ransomware, cryptography).
+       - Change the section beginning `"Add a short description here"` to the text of your blog post.
     - Blog Topic 2
-       - Change "Blog Post 2 Title" to the title of your second blog post.
-       - Change "Add Keywords" to relevant keywords for your post (e.g., ransomware, cryptography).
-       - Change the section beginning "Add a short description here" to the text of your blog post.
+       - Change `"Blog Post 2 Title"` to the title of your second blog post.
+       - Change `"Add Keywords"` to relevant keywords for your post (e.g., ransomware, cryptography).
+       - Change the section beginning `"Add a short description here"` to the text of your blog post.
 
 After you have made your changes, return to your browser and refresh your webpage.
   - Congratulations, you now have your own cloud-hosted web blog!
 
 
-### Part 5: Answer Review Questions
+### 📝 Step 5 — Answer Review Questions
 
 
 - Open up the [review questions](https://docs.google.com/document/d/1VoWNPNUvobnVj7F6oM2wnVO0vViaZlzgIUs43adVw1U/copy), make a copy of the document, and answer the Part 1 review questions.   
@@ -310,7 +310,7 @@ After you have made your changes, return to your browser and refresh your webpag
 
 ---
 
-### Part 1 Milestone
+## 🎉 Part 1 Milestone
 
 In today's class, you:
   - (1) - **Created an Azure web app**.
@@ -324,7 +324,7 @@ Completing these steps required you to leverage your terminal, systems administr
 
 ---
 
-# Part 2 Activity File: Secure Your Web Application with SSL Certificates (Azure Premium and GoDaddy Domain Version)
+# 🔐 Part 2 — Secure Your Web Application with SSL Certificates
 
 Today, you will secure your web application. Specifically, you will:
 
@@ -337,7 +337,7 @@ Today, you will secure your web application. Specifically, you will:
 
 ⚠️ Note: You will purposely create and add **two** types of SSL certificates to your web application to experience the advantages and disadvantages of each certificate.
 
-### Resources
+## 📚 Resources
 
 - [Azure Key Vaults](https://azure.microsoft.com/en-us/services/key-vault/#product-overview)
 - [What is a self signed certificate?](https://sectigostore.com/page/what-is-a-self-signed-certificate/)
@@ -349,7 +349,7 @@ Today, you will secure your web application. Specifically, you will:
 
 ---
 
-### Getting Started/Prerequisites
+## 🚀 Getting Started / Prerequisites
 
 Before you begin Part 2, you are required to have completed the following tasks from Part 1:
 
@@ -358,9 +358,9 @@ Before you begin Part 2, you are required to have completed the following tasks 
 - Deployed a Docker container to your web application.
 - Customized your web application with your own unique content.
 
-## Instructions
+## 📋 Instructions
 
-### Part 1: Create a Key Vault
+### 🔑 Step 1 — Create a Key Vault
 
 In this first part, you will create an Azure key vault. To do so, complete the following steps:
 
@@ -369,26 +369,26 @@ In this first part, you will create an Azure key vault. To do so, complete the f
 
 	 - Make sure that you're logged in to your personal Azure account (not @Cyberxsecurity), where your Cloud Security&ndash;unit VMs are located.
 	
-2. Select "Key vaults" from the Azure search field at the top of the page, as the following image shows:
+2. Select `"Key vaults"` from the Azure search field at the top of the page, as the following image shows:
 
       ![A screenshot depicts the "Services" menu with "Key vaults" highlighted.](Step-by-Step-Guide/Part%202/Images/project1_day2_1.png)
  
-3. Select "+ Create" from the Key Vault page to create your key vault, as the following image shows:
+3. Select `"+ Create"` from the Key Vault page to create your key vault, as the following image shows:
 
       ![A screenshot highlights the "+ Create" button.](Step-by-Step-Guide/Part%202/Images/project1_day2_2.png)
  
-4. On the "Create key vault" tab, make the following selections:
+4. On the `"Create key vault"` tab, make the following selections:
    - Subscription/Resource Group: Select the same subscription and resource groups that you selected on Part 1.
    - Key Vault Name: Choose a key vault name, such as `project1_KeyVault`. (Note: This name must be globally unique, so you will be prompted to choose a different name if the one you enter has been used before.)
    - Region: Select the same region that you selected on Part 1.
-   - Pricing tier: Select the "Standard" tier.
+   - Pricing tier: Select the `"Standard"` tier.
    - Leave the default options for all of the other tabs (Access Policy, Networking, Tags).
   
-   The following image shows the completed "Create key vault" tab:
+   The following image shows the completed `"Create key vault"` tab:
 
    ![project1_1_day2_3](Step-by-Step-Guide/Part%202/Images/project1_day2_3.png)
   
-   - Finally, select "Review + Create" to create your key vault.
+   - Finally, select `"Review + Create"` to create your key vault.
 
 5. After your key vault has been created, select your new resource to view your new key vault.
 
@@ -402,7 +402,7 @@ In this first part, you will create an Azure key vault. To do so, complete the f
     ![A screenshot highlights the "Keys," "Secrets," and "Certificates" options.](Step-by-Step-Guide/Part%202/Images/project1_day2_4.png)
 
 
-### Part 2: Create a Self-Signed Certificate
+### 📜 Step 2 — Create a Self-Signed Certificate
 
 In this second part, you will return to the command line to create a self-signed certificate using OpenSSL. To do so, complete the following steps:
 
@@ -427,7 +427,7 @@ In this second part, you will return to the command line to create a self-signed
      - We added the following options: 
          -  **-x509**: Indicates for OpenSSL to create an SSL certificate.
          -  **-sha256**: Uses the sha256 hashing algorithm.
-         -  **-nodes** 
+         -  **-nodes**: Skips password protection on the private key (needed for automation).
          -  **-days 365**: States the certificate will be valid for one year.
          -  **-newkey rsa:2048**: Uses a 2048-bit RSA key.
          -  **-keyout project1_key.key**: The outputted name of the private key.
@@ -441,7 +441,7 @@ In this second part, you will return to the command line to create a self-signed
       - **Country Name (2 letter code) [AU]**: Enter your country.
       - **State or Province Name (full name) [Some State]**: Enter your state.
       - **Locality Name (e.g., city) [ ]**: Enter your city.
-      - **Organization Name (e.g., company) [Internet Widgits Pty Ltd]**: Enter "Student".
+      - **Organization Name (e.g., company) [Internet Widgits Pty Ltd]**: Enter `"Student"`.
       - **Organizational Unit Name (e.g., section) [ ]**: Leave blank by pressing Enter.
       - **Common Name (e.g., server FQDN or YOUR name) [ ]**: Enter your full domain name, such as "bobsblog.com".
       - **Email Address [ ]:** Leave blank by pressing Enter.
@@ -477,28 +477,28 @@ In this second part, you will return to the command line to create a self-signed
       ![A screenshot depicts the `ls` command and its output.](Step-by-Step-Guide/Part%202/Images/project1_day2_9.png) 
  
 9.  To download your new PFX certificate, complete the following four steps:
-     - (1) Click the "Upload/Download" icon in the toolbar above your Cloud Shell window.
-     - (2) Select "Download."
-     - (3) Enter the name of your PFX certificate in the "Download a file" window.
-     - (4) Click "Download." 
+     - (1) Click the `"Upload/Download"` icon in the toolbar above your Cloud Shell window.
+     - (2) Select `"Download."`
+     - (3) Enter the name of your PFX certificate in the `"Download a file"` window.
+     - (4) Click `"Download."` 
      
      The following image shows these steps:
 
       ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part%202/Images/project1_day2_10.png) 
 
 
-### Part 3: Import and Bind Your Self-Signed Certificate to Your Web App
+### 🔗 Step 3 — Import and Bind Your Self-Signed Certificate
 
 In this part, you will use Azure to import and bind the certificate that you just added to your web application. To do so, complete the following steps:
 
-1. From the Azure Portal, select "Key Vaults."
+1. From the Azure Portal, select `"Key Vaults."`
      - Select the key vault that you created in Part 1.
 
-2. From your key vault, select "Certificates" and then "+ Generate/Import," as the following image shows:
+2. From your key vault, select `"Certificates"` and then `"+ Generate/Import,"` as the following image shows:
 
      ![A screenshot highlights the "Certificates" and "+ Generate/Import" options.](Step-by-Step-Guide/Part%202/Images/project1_day2_11.png)
  
-3. On the "Create a certificate" page, select the following:
+3. On the `"Create a certificate"` page, select the following:
       - **Method of Certificate Creation**: Import
       - **Certificate Name**: project1PFX-cert
       - **Upload Certificate File**: Select your PFX certificate (it's likely in your `Downloads` folder)
@@ -509,21 +509,21 @@ In this part, you will use Azure to import and bind the certificate that you jus
       ![A screenshot depicts the filled out "Create a certificate" page.](Step-by-Step-Guide/Part%202/Images/project1_day2_12.png)
 
 
-4. Select "Create" to upload your certificate.
+4. Select `"Create"` to upload your certificate.
      - The following success message should appear to confirm that your PFX certificate has been uploaded to your key vault:
 
      ![A screenshot depicts the success message.](Step-by-Step-Guide/Part%202/Images/project1_day2_13.png)
  
  
 5. Now that you have uploaded your certificate, it's time to add it to your web application. To do so, complete the following steps:
-     - Return to the web application (under "App Services") that you created on Part 1.
-     - On this page, select "TLS/SSL Settings," as the following image shows:
+     - Return to the web application (under `"App Services"`) that you created on Part 1.
+     - On this page, select `"TLS/SSL Settings,"` as the following image shows:
 
       ![A screenshot highlights the "TLS/SSL Settings" option.](Step-by-Step-Guide/Part%202/Images/project1_day2_14.png)
  
 6. On this page, import your new PFX certificate from your key vault. To do so, complete the following steps:
-      - (1) Select "Private Key Certificates."
-      - (2) Click "+ Import Key Vault Certificate."
+      - (1) Select `"Private Key Certificates."`
+      - (2) Click `"+ Import Key Vault Certificate."`
       - (3) When the pane opens on the right side of your screen, enter your subscription, key vault, and certificate that you just created.
 
       The following image shows these steps:
@@ -535,17 +535,17 @@ In this part, you will use Azure to import and bind the certificate that you jus
       ![A screenshot depicts the available certificate.](Step-by-Step-Guide/Part%202/Images/project1_day2_16.png)
  
 8. Currently your certificate is just available to use for your web application&mdash;now, it is time to bind it! To bind your certificate, complete the following steps:
-     - Select "Bindings."
-     - Toggle "HTTPS Only" to "On."
-     - Toggle "Minimum TLS Version" to "1.2."
-     - Click "+ Add TLS/SSL Binding."
-     - When the pane appears on the right side of your screen, select your domain, the matching certificate, and "SNI/SSL" for the TLS/SSL type.
+     - Select `"Bindings."`
+     - Toggle `"HTTPS Only"` to `"On."`
+     - Toggle `"Minimum TLS Version"` to "1.2."
+     - Click `"+ Add TLS/SSL Binding."`
+     - When the pane appears on the right side of your screen, select your domain, the matching certificate, and `"SNI/SSL"` for the TLS/SSL type.
 
      The following image shows these steps:
 
      ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part%202/Images/project1_day2_17.png)
  
-9. After selecting "Add Binding," your binding should appear in the "TLS/SSL bindings" list, as the following image shows:
+9. After selecting `"Add Binding,"` your binding should appear in the `"TLS/SSL bindings"` list, as the following image shows:
 
      ![A screenshot depicts the binding in the "TLS/SSL bindings" list.](Step-by-Step-Guide/Part%202/Images/project1_day2_18.png)
 
@@ -556,14 +556,14 @@ In this part, you will use Azure to import and bind the certificate that you jus
 
      - Note that this image is from the Chrome browser; the message may look slightly different depending on your browser.
 
-11. Let's examine the certificate that you just added. Click "Not secure" in the search bar if you are in Chrome, or a similar message depending on your browser, as shown in the following image:
+11. Let's examine the certificate that you just added. Click `"Not secure"` in the search bar if you are in Chrome, or a similar message depending on your browser, as shown in the following image:
 
     ![A screenshot highlights the "Not secure" message in the search bar.](Step-by-Step-Guide/Part%202/Images/project1_day2_21.png)
 
-     - After selecting "Not secure," select "Certificate (Invalid)" from the menu to examine your certificate.
+     - After selecting `"Not secure,"` select `"Certificate (Invalid)"` from the menu to examine your certificate.
      - Note the reason for your error based on the message on your certificate. This message is due to the fact that your certificate was created by you and not a trusted CA.
 
-12. Next, click the "Details" tab of your certificate, then select the "Subject" option, as the following image shows:
+12. Next, click the `"Details"` tab of your certificate, then select the `"Subject"` option, as the following image shows:
 
      ![A screenshot highlights the "Details" tab and "Subject" option.](Step-by-Step-Guide/Part%202/Images/project1_day2_22.png)
 
@@ -582,7 +582,7 @@ You have successfully created a self-signed certificate and bound it to your web
 
 
 	
-### Part 4: Create and Bind an App Service Managed Certificate
+### 🏅 Step 4 — Create and Bind an App Service Managed Certificate
 
 In this part, you will use Azure's managed certificate to create and bind a more secure certificate to your web application.
 
@@ -590,34 +590,34 @@ You were just able to create and bind your own self-signed certificate to your w
 
 You will now create and bind a more secure, trusted SSL certificate to your web app using Azure's cloud services. To do so, complete the following steps:
 
-1.  First, return to "TLS/SSL settings" under your web application.
-2.  Select "Private Key Certificates."
-3.  Select "+ Create App Service Managed Certificates."
-4.  When the pop-up appears on the right side of your screen, select your domain and click "Create," as the following image shows:
+1.  First, return to `"TLS/SSL settings"` under your web application.
+2.  Select `"Private Key Certificates."`
+3.  Select `"+ Create App Service Managed Certificates."`
+4.  When the pop-up appears on the right side of your screen, select your domain and click `"Create,"` as the following image shows:
 
       ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part%202/Images/project1_day2_23.png)
 
-5. Once your app service managed certificate has been created, return to the "Bindings" tab.
-6. Select "+ Add TLS/SSL Binding."
+5. Once your app service managed certificate has been created, return to the `"Bindings"` tab.
+6. Select `"+ Add TLS/SSL Binding."`
 7. When the pane appears on the right side of your screen, select your domain and the new certificate that you just created.
-     - Note the current thumbprint next to your domain under the "TLS/SSL bindings" menu, and select the certificate with the other thumbprint, as the following image shows: 
+     - Note the current thumbprint next to your domain under the `"TLS/SSL bindings"` menu, and select the certificate with the other thumbprint, as the following image shows: 
 
       ![A screenshot depicts the ](Step-by-Step-Guide/Part%202/Images/project1_day2_24.png)
 
-8. Select "SNI/SSL" for the TLS/SSL type, then click "Add Binding."
+8. Select `"SNI/SSL"` for the TLS/SSL type, then click `"Add Binding."`
 
 9. Now that your new app services managed certificate has been bound to your web application, revisit your website. You should not see any warnings displayed this time!
 
 Congratulations, you have now created a web application and secured it with a trusted SSL certificate!
 
-### Part 5: Answer Review Questions
+### 📝 Step 5 — Answer Review Questions
 
 - Open your copy of the [review questions](https://docs.google.com/document/d/1VoWNPNUvobnVj7F6oM2wnVO0vViaZlzgIUs43adVw1U/edit?usp=sharing), make a copy of the document, and answer the Part 2 review questions.   
      - Note that you will submit this document as one of your deliverables at the end of the project.
 
 ---
 
-### Part 2 Milestone
+## 🎉 Part 2 Milestone
 
 In today's class, you:
   - (1) **Created a key vault**. 
@@ -631,7 +631,7 @@ Completing these steps required you to leverage your terminal, systems administr
 
 ---
 
-# Part 3 Activity File: Protect Your Web Application with Azure's Security Features
+# 🛡️ Part 3 — Protect Your Web Application with Azure's Security Features
 
 Today, you will be protecting your web application. Specifically, you will be working on:
 
@@ -643,8 +643,7 @@ Today, you will be protecting your web application. Specifically, you will be wo
   - (6) **Conclude and submit your project**.
 
 
-
-### Resources
+## 📚 Resources
 
 - [Azure Front Door Documentation](https://azure.microsoft.com/en-us/services/frontdoor/#overview)
 - [Azure Front Door Locations by Region](https://docs.microsoft.com/en-us/azure/frontdoor/edge-locations-by-region)
@@ -654,7 +653,7 @@ Today, you will be protecting your web application. Specifically, you will be wo
 
 ---
 
-### Getting Started / Pre-requisites
+## 🚀 Getting Started / Prerequisites
 
 Before you begin Part 3, you are required to have completed the following tasks from Part 2:
 
@@ -664,9 +663,9 @@ Before you begin Part 3, you are required to have completed the following tasks 
 - Created and Bound an App Service Managed Certificate (Paid domains)
 - Analyzed and compared self-signed certificates and trusted certificates.
 
-## Instructions
+## 📋 Instructions
 
-### Part 1: Create a Front Door Instance
+### 🚪 Step 1 — Create a Front Door Instance
 
 In this first part, you will create an Azure Front Door instance. To do so, complete the following steps: 
 
@@ -676,27 +675,27 @@ In this first part, you will create an Azure Front Door instance. To do so, comp
 	
 2. Next, access the app service resource that you created on Part 1.
 
-3. From the menu on the left side of the screen, select "Networking."
+3. From the menu on the left side of the screen, select `"Networking."`
 
-4. From this page, select "Azure Front Door" under "More networking features," as the following image shows:
+4. From this page, select `"Azure Front Door"` under `"More networking features,"` as the following image shows:
 
      ![A screenshot highlights the "Azure Front Door" option.](Step-by-Step-Guide/Part%203/Images/project1_day3_1.png)
  
-5. On the next page, since you haven't created your Front Door resource yet, select "Create new" under "Front Door instance."
+5. On the next page, since you haven't created your Front Door resource yet, select `"Create new"` under `"Front Door instance."`
 
 6. This will open a pane on the right side of your screen.  
    - In this pane, name your Front Door "project1-FrontDoor".
    - Leave the default settings to create a default **web application firewall (WAF)**.
-   - Click the "Add" button at the bottom of the pane, as the following image shows:
+   - Click the `"Add"` button at the bottom of the pane, as the following image shows:
 
      ![A screenshot highlights the steps in this process.](Step-by-Step-Guide/Part%203/Images/project1_day3_2.png)
  
 7. This will return you to the Azure Front Door page.
-     - Click "OK" to update the Front Door instance to your application, as the following image shows:
+     - Click `"OK"` to update the Front Door instance to your application, as the following image shows:
 
      ![A screenshot highlights the "OK" button.](Step-by-Step-Guide/Part%203/Images/project1_day3_3.png)
 
-8. To verify that your Front Door instance has been set up correctly, select "Azure Front Door" (from Step 4) again.
+8. To verify that your Front Door instance has been set up correctly, select `"Azure Front Door"` (from Step 4) again.
 
 9. The message "Azure Front Door is configured for your web app" should display as confirmation, as shown in the following image:
  
@@ -704,13 +703,13 @@ In this first part, you will create an Azure Front Door instance. To do so, comp
 
 10.  Take a screenshot of this confirmation.
 
-### Part 2: Analyze WAF Rule Sets
+### 📊 Step 2 — Analyze WAF Rule Sets
 
 In this second part, you will view the features that are provided by your web application firewall. To do so, complete the following steps:
 
-1.  From your Azure portal, enter "web app" until "Web Application Firewall policies (WAF)" appears as one of the choices in the dropdown.
+1.  From your Azure portal, enter "web app" until `"Web Application Firewall policies (WAF)"` appears as one of the choices in the dropdown.
 
-2.  Select that option. The WAF that you created during the previous step should display on the "Web Application Firewall policies (WAF)" page. 
+2.  Select that option. The WAF that you created during the previous step should display on the `"Web Application Firewall policies (WAF)"` page. 
      - Note: It will begin with "project1frontdoor" and end with several random letters and numbers.
 
 3. Select your WAF, as the following image shows:
@@ -719,11 +718,11 @@ In this second part, you will view the features that are provided by your web ap
  
 4. When your WAF policies page opens, notice the options on the left side of your screen.
 
-5. Select "Managed rules" either from the left-hand toolbar or from the box on the bottom of the page, as the following image shows:
+5. Select `"Managed rules"` either from the left-hand toolbar or from the box on the bottom of the page, as the following image shows:
 
      ![A screenshot highlights the two "Managed rules" options.](Step-by-Step-Guide/Part%203/Images/project1_day3_6.png)
 
-6. When the "Managed rules" page appears, scroll through the page to view the various rules, as shown in the following image:
+6. When the `"Managed rules"` page appears, scroll through the page to view the various rules, as shown in the following image:
 
      ![A screenshot depicts the "Managed rules" page.](Step-by-Step-Guide/Part%203/Images/project1_day3_7.png)
 
@@ -737,7 +736,7 @@ In this second part, you will view the features that are provided by your web ap
           - Redirect the request to another webpage.
 
 
-### Part 3: Configure Custom WAF Rules
+### 🎛️ Step 3 — Configure Custom WAF Rules
 
 In this part, you will configure a custom WAF rule to protect against a potential security attack.
 
@@ -745,13 +744,13 @@ Let's assume for this project that you have been experiencing a variety of attac
 
 Now, you'll learn how to create a custom rule on your web application to protect against these attacks. To do so, complete the following steps:
 
-1. Select "Custom rules" from the toolbar on the left-hand side of the screen, as the following image shows:
+1. Select `"Custom rules"` from the toolbar on the left-hand side of the screen, as the following image shows:
 
      ![A screenshot highlights the "Custom rules" option.](Step-by-Step-Guide/Part%203/Images/project1_day3_8.png)
  
 
-2. To create a custom rule, select "+ Add custom rule."
-     - When the pane pops up on the right, name your custom rule "Project1rule."
+2. To create a custom rule, select `"+ Add custom rule."`
+     - When the pane pops up on the right, name your custom rule `"Project1rule."`
      - Leave the status and rule type at the default options.
      - Set the priority to 100.
      - Set the following terms for the rule's condition:
@@ -759,7 +758,7 @@ Now, you'll learn how to create a custom rule on your web application to protect
         - Operation: is not
         - Select the three countries (USA, Canada, Australia)
         - Then: Deny traffic
-     - Then, click "Add." 
+     - Then, click `"Add."` 
      - The following image shows these steps:
 
      ![A screenshot highlights each step in the process.](Step-by-Step-Guide/Part%203/Images/project1_day3_9.png)
@@ -768,10 +767,9 @@ Now, you'll learn how to create a custom rule on your web application to protect
 
      ![A screenshot depicts the custom rule.](Step-by-Step-Guide/Part%203/Images/project1_day3_10.png)
 
-4. Take a screenshot of your custom rule. Press "Save".
+4. Take a screenshot of your custom rule. Press `"Save"`.
 
 5. Congratulations! You have configured the WAF to restrict traffic from accessing your webpage unless the source IP is from the US, Canada, or Australia. 
-
 
 
 |:warning: **Checkpoint** :warning:|
@@ -782,7 +780,7 @@ Now, you'll learn how to create a custom rule on your web application to protect
 | :heavy_check_mark: Created a custom WAF rule to protect against international traffic. |
 
 	
-### Part 4: Analyze and Fix a Security Center Recommendation
+### 🔍 Step 4 — Analyze and Fix a Security Center Recommendation
 
 **Azure Security Center** is a management system that provides best practices and recommendations to enhance the security of your cloud resources.
 
@@ -791,7 +789,7 @@ While Azure provides tools to protect your cloud resources, it is up to you to a
 In this part, you will learn how to use Azure Security Center to analyze and fix a recommendation from the Security Center dashboard. To do so, complete the following steps:
 
 
-1.  To access Azure Security Center, from your web app, select "Security" from the toolbar, as the following image shows:
+1.  To access Azure Security Center, from your web app, select `"Security"` from the toolbar, as the following image shows:
 
      ![A screenshot highlights "Security" in the toolbar.](Step-by-Step-Guide/Part%203/Images/project1_day3_11.png)
 
@@ -799,7 +797,7 @@ In this part, you will learn how to use Azure Security Center to analyze and fix
      - Review the recommendations, and note that Azure describes the recommendations in this way: "Security Center continuously monitors the configuration of your app services to identify potential security vulnerabilities and recommends actions to mitigate them."
      - ⚠️ **Important**: Your security recommendations may vary, or may not show up at all. If there are no security recommendations, skip ahead to Part 5, and return in a few hours to complete this section. If you have any, most security recommendations will appear within 24 hours.
 
-3. Select the recommendation "FTPS should be required in your web App," as shown in the following image:      
+3. Select the recommendation `"FTPS should be required in your web App,"` as shown in the following image:      
 
      ![A screenshot highlights the recommendation.](Step-by-Step-Guide/Part%203/Images/project1_day3_12.png)
 
@@ -808,5 +806,3 @@ In this part, you will learn how to use Azure Security Center to analyze and fix
      ![A screenshot highlights the remediation steps.](Step-by-Step-Guide/Part%203/Images/project1_day3_13.png)
 
 5. Follow the recommended steps to remediate this recommendation.
-
-
