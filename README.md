@@ -2,7 +2,10 @@
 
 ## 🎯 Project Overview
 
-A three-part project that builds, hosts, and secures a custom web application on Microsoft Azure. **Part 1** creates an Azure App Service web app, buys a custom domain, and deploys a containerized cyber-blog from Docker Hub. **Part 2** secures it with SSL/TLS — a Key Vault, a self-signed certificate, and an App Service Managed Certificate, bound to the domain. **Part 3** hardens it with Azure Front Door and a Web Application Firewall (WAF), custom geo-filtering rules, and Security Center remediation.
+A three-part project that builds, hosts, and secures a custom web application on Microsoft Azure. 
+- **Part 1** creates an Azure App Service web app, buys a custom domain, and deploys a containerized cyber-blog from Docker Hub. 
+- **Part 2** secures it with SSL/TLS — a Key Vault, a self-signed certificate, and an App Service Managed Certificate, bound to the domain.
+- **Part 3** hardens it with Azure Front Door and a Web Application Firewall (WAF), custom geo-filtering rules, and Security Center remediation.
 
 The project demonstrates the full lifecycle of standing up a public web app and layering security on top: encryption in transit, edge protection, traffic filtering, and posture management.
 
