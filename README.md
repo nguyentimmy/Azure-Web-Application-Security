@@ -34,7 +34,7 @@ The project demonstrates the full lifecycle of standing up a public web app and 
 Today you will build, host, and design your own web application. Specifically, you will:
 
   - (1) **Create an Azure web app**. 
-  - (2) **Choose a domain**.
+  - (2) **Choose a domain**. (Can use Go-Daddy)
   - (3) **Deploy a container on the web app**.
   - (4) **Design your custom web application**.
   - (5) **Answer review questions**.
@@ -42,17 +42,16 @@ Today you will build, host, and design your own web application. Specifically, y
 ## 📚 Resources
 
 - [Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
-- [How to come up with a good domain name](https://domains.google/learn/how-to-come-up-with-a-good-domain-name/)
-- If Microsoft Support is needed, visit [How to open a support ticket](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
 - [Split-Half Search](https://www.peachpit.com/articles/article.aspx?p=420908&seqNum=3)
 - [Top CyberSecurity Blog Websites](https://onlinedegrees.sandiego.edu/top-cyber-security-blogs-websites/)
+- If Microsoft Support is needed, visit [How to open a support ticket](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
 
 
 ---
 
 ## 🚀 Getting Started / Prerequisites
 
-Before you begin, you are required to have completed the following tasks from the Cloud unit:
+Before you begin, you are required to have completed the following tasks:
 - Created a subscription.
 - Created a resource group.
 
