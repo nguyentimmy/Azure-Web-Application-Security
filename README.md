@@ -65,8 +65,6 @@ In Part 1 of this activity, you will create your own Azure web application. You 
 
 
 1. Begin by logging in to the Azure portal: [https://portal.azure.com](https://portal.azure.com).
-
-	 - Make sure that you're logged in to your personal Azure account, where your Cloud Security&ndash;unit VMs are located.
 	
 2. Select `"App Services"` from the Azure search field at the top of the page, as the following image shows:
 
@@ -368,8 +366,6 @@ In this first part, you will create an Azure key vault. To do so, complete the f
 
 
 1. Begin by logging in to the Azure portal: [https://portal.azure.com](https://portal.azure.com).
-
-	 - Make sure that you're logged in to your personal Azure account (not @Cyberxsecurity), where your Cloud Security&ndash;unit VMs are located.
 	
 2. Select `"Key vaults"` from the Azure search field at the top of the page, as the following image shows:
 
@@ -672,8 +668,6 @@ Before you begin Part 3, you are required to have completed the following tasks 
 In this first part, you will create an Azure Front Door instance. To do so, complete the following steps: 
 
 1. Begin by logging in to the Azure portal: [https://portal.azure.com](https://portal.azure.com).
-
-	 - Make sure that you're logged in to your personal Azure account (not @Cyberxsecurity), where your Cloud Security&ndash;unit VMs are located.
 	
 2. Next, access the app service resource that you created on Part 1.
 
